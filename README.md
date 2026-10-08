@@ -38,6 +38,10 @@ npm run preview
 - `index.html`: página principal.
 - `dados.html`: casos de dados e BI.
 - `src/`: estilos, interações e demonstrações.
+- `src/demo-data.js`: conjuntos demonstrativos e trechos de Power Query.
+- `src/demo-renderers.js`: funções compartilhadas para gerar tabelas e gráficos.
+- `src/case-demos.js`: monta os exemplos básicos e chama as visões adicionais.
+- `src/expanded-demos.js`: monta as visões adicionais após os exemplos básicos.
 - `public/assets/`: artes e consulta Power Query.
 - `vite.config.js`: configuração das duas páginas.
 - `vercel.json`: configuração de publicação.
@@ -51,3 +55,9 @@ Na Vercel, use o preset **Vite**, o comando `npm run build` e a saída `dist`. E
 - [LinkedIn](https://www.linkedin.com/in/iagodsantana/)
 - [GitHub](https://github.com/Reure)
 - [Instagram](https://www.instagram.com/reure.ivgx/)
+
+## Manutenção
+
+A ordem dos casos e os avisos estão definidos em `dados.html`. Para editar números demonstrativos, abra `src/demo-data.js`; para mudar o desenho dos gráficos, abra `src/demo-renderers.js`. As funções de apresentação recebem dados locais controlados pelo projeto, sem entrada de usuários.
+
+Use `npm run format` para formatar os arquivos e `npm run format:check` para conferir o padrão.

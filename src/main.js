@@ -15,7 +15,11 @@ function openSocial(network) {
     window.open(url, '_blank', 'noopener,noreferrer');
     return;
   }
-  const label = { linkedin: 'LinkedIn', instagram: 'Instagram', github: 'GitHub' }[network];
+  const label = {
+    linkedin: 'LinkedIn',
+    instagram: 'Instagram',
+    github: 'GitHub',
+  }[network];
   const message = `${label}: URL aguardando configuração.`;
   status.textContent = message;
   toast.textContent = message;
@@ -38,19 +42,22 @@ document.querySelector('#terminal-form').addEventListener('submit', (event) => {
   input.value = '';
 });
 
-// As páginas de projetos serão criadas depois. Estes detalhes não inventam resultados.
+// Os botões de projeto usam o mesmo diálogo, preenchido com o conteúdo abaixo.
 const projects = {
   java: {
     title: 'Sistema de pedidos em Java',
-    description: 'Projeto acadêmico: aplicação de console para cadastro de clientes e produtos, montagem de pedidos, controle de estoque e pagamentos simulados. O código usa orientação a objetos, herança, tipos de clientes e produtos, exceções próprias e separação entre entidades, serviços e persistência. Clientes, produtos e pedidos são armazenados em SQLite por JDBC.',
+    description:
+      'Projeto acadêmico: aplicação de console para cadastro de clientes e produtos, montagem de pedidos, controle de estoque e pagamentos simulados. O código usa orientação a objetos, herança, tipos de clientes e produtos, exceções próprias e separação entre entidades, serviços e persistência. Clientes, produtos e pedidos são armazenados em SQLite por JDBC.',
   },
   dados: {
     title: 'Dados na prática',
-    description: 'Experiência com preparação de dados, tratamento de CSV, Power Query, modelagem e medidas, dashboards em Power BI e Excel e apresentação para a gestão. Contextos: atendimento (fila, nível de serviço e abandono), vendas (conversão por operador, cidade e faixa etária), tickets e prazos. Os casos detalhados serão adicionados em uma próxima etapa.',
+    description:
+      'Experiência com preparação de dados, tratamento de CSV, Power Query, modelagem e medidas, dashboards em Power BI e Excel e apresentação para a gestão. Contextos: atendimento (fila, nível de serviço e abandono), vendas (conversão por operador, cidade e faixa etária), tickets e prazos. Os casos detalhados serão adicionados em uma próxima etapa.',
   },
   basquete: {
     title: 'Basquete em construção',
-    description: 'Ideia de aplicativo para registro de atividades e estatísticas de basquete. O estágio de implementação ainda precisa ser confirmado. A página do projeto será adicionada em uma próxima etapa.',
+    description:
+      'Ideia de aplicativo para registro de atividades e estatísticas de basquete. O estágio de implementação ainda precisa ser confirmado. A página do projeto será adicionada em uma próxima etapa.',
   },
 };
 const dialog = document.querySelector('#project-dialog');
@@ -58,7 +65,8 @@ document.querySelectorAll('[data-project]').forEach((button) => {
   button.addEventListener('click', () => {
     const project = projects[button.dataset.project];
     document.querySelector('#dialog-title').textContent = project.title;
-    document.querySelector('#dialog-description').textContent = project.description;
+    document.querySelector('#dialog-description').textContent =
+      project.description;
     dialog.showModal();
   });
 });
@@ -68,7 +76,12 @@ document.querySelectorAll('.dialog-close, .dialog-done').forEach((button) => {
 dialog.addEventListener('click', (event) => {
   if (event.target === dialog) {
     const bounds = dialog.getBoundingClientRect();
-    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+    if (
+      event.clientX < bounds.left ||
+      event.clientX > bounds.right ||
+      event.clientY < bounds.top ||
+      event.clientY > bounds.bottom
+    )
+      dialog.close();
   }
 });
-

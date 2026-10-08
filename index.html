@@ -1,111 +1,251 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio de Iago Diogo. Dados, BI e desenvolvimento em construção." />
-  <meta name="theme-color" content="#151716" />
-  <title>Iago Diogo — Dados, BI e desenvolvimento</title>
-  <link rel="stylesheet" href="./src/style.css" />
-</head>
-<body>
-  <a class="skip-link" href="#principal">Pular para o conteúdo</a>
-  <header class="site-header container">
-    <a class="brand" href="#principal">Iago Diogo</a>
-    <nav aria-label="Navegação principal">
-      <a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
-      <button class="nav-social" data-social="github" aria-describedby="social-notice">GitHub ↗</button>
-    </nav>
-  </header>
-  <main id="principal">
-    <section class="hero container" aria-labelledby="hero-title">
-      <div class="hero-art art" aria-hidden="true"></div>
-      <div class="hero-copy">
-        <span class="section-mark" aria-hidden="true"></span>
-        <h1 id="hero-title">Iago Diogo</h1>
-        <p class="hero-subtitle">Dados, BI e desenvolvimento.</p>
-        <p class="construction">Desenvolvimento em construção.</p>
-        <div class="hero-actions">
-          <a class="primary-button" href="#projetos">Ver projetos <span aria-hidden="true">↓</span></a>
-          <div class="social-links" aria-label="Redes sociais">
-            <button data-social="linkedin" aria-describedby="social-notice">LinkedIn <span aria-hidden="true">↗</span></button>
-            <button data-social="instagram" aria-describedby="social-notice">Instagram <span aria-hidden="true">↗</span></button>
-            <button data-social="github" aria-describedby="social-notice">GitHub <span aria-hidden="true">↗</span></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Iago Diogo. Dados, BI e desenvolvimento em construção."
+    />
+    <meta name="theme-color" content="#151716" />
+    <title>Iago Diogo — Dados, BI e desenvolvimento</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#principal">Pular para o conteúdo</a>
+    <header class="site-header container">
+      <a class="brand" href="#principal">Iago Diogo</a>
+      <nav aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a><a href="#sobre">Sobre</a
+        ><a href="#contato">Contato</a>
+        <button
+          class="nav-social"
+          data-social="github"
+          aria-describedby="social-notice"
+        >
+          GitHub ↗
+        </button>
+      </nav>
+    </header>
+    <main id="principal">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-art art" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <span class="section-mark" aria-hidden="true"></span>
+          <h1 id="hero-title">Iago Diogo</h1>
+          <p class="hero-subtitle">Dados, BI e desenvolvimento.</p>
+          <p class="construction">Desenvolvimento em construção.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#projetos"
+              >Ver projetos <span aria-hidden="true">↓</span></a
+            >
+            <div class="social-links" aria-label="Redes sociais">
+              <button data-social="linkedin" aria-describedby="social-notice">
+                LinkedIn <span aria-hidden="true">↗</span>
+              </button>
+              <button data-social="instagram" aria-describedby="social-notice">
+                Instagram <span aria-hidden="true">↗</span>
+              </button>
+              <button data-social="github" aria-describedby="social-notice">
+                GitHub <span aria-hidden="true">↗</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <aside class="margin-note hero-note">“Você<br>pode ir<br>além”<small>BK’ · título de faixa</small></aside>
-    </section>
-    <section id="projetos" class="projects container" aria-labelledby="projects-title">
-      <div class="section-heading"><span class="section-mark" aria-hidden="true"></span><h2 id="projects-title">Projetos</h2></div>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-art data-art art" role="img" aria-label="Arte conceitual de gráficos em tons de carvão, creme e cobre"></div>
-          <p class="image-caption">Imagem conceitual</p>
-          <h3>Dados na prática</h3>
-          <p class="project-category">Dashboards · Análise de dados</p>
-          <p>Tratamento de dados, dashboards e apoio à gestão.</p>
-          <a class="text-button" href="./dados.html">Explorar os casos <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="project-card" hidden>
-          <div class="project-art basketball-art art" role="img" aria-label="Arte conceitual de uma quadra de basquete vista de cima"></div>
-          <p class="image-caption">Imagem conceitual</p>
-          <div class="project-title"><h3>Basquete em construção</h3><span class="status-badge">Status a confirmar</span></div>
-          <p class="project-category">Projeto de aplicativo</p>
-          <p>Registro de atividades e estatísticas de basquete.</p>
-          <button class="text-button" data-project="basquete">Conhecer a ideia <span aria-hidden="true">→</span></button>
-        </article>
-        <article class="project-card java-card">
-          <div class="java-art" aria-label="Representação conceitual do menu de um sistema de pedidos em Java"><p class="eyebrow">Java / SQLite</p><pre aria-hidden="true">Sistema de pedidos
+        <aside class="margin-note hero-note">
+          “Você<br />pode ir<br />além”<small>BK’ · título de faixa</small>
+        </aside>
+      </section>
+      <section
+        id="projetos"
+        class="projects container"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-heading">
+          <span class="section-mark" aria-hidden="true"></span>
+          <h2 id="projects-title">Projetos</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div
+              class="project-art data-art art"
+              role="img"
+              aria-label="Arte conceitual de gráficos em tons de carvão, creme e cobre"
+            ></div>
+            <p class="image-caption">Imagem conceitual</p>
+            <h3>Dados na prática</h3>
+            <p class="project-category">Dashboards · Análise de dados</p>
+            <p>Tratamento de dados, dashboards e apoio à gestão.</p>
+            <a class="text-button" href="./dados.html"
+              >Explorar os casos <span aria-hidden="true">→</span></a
+            >
+          </article>
+          <article class="project-card" hidden>
+            <div
+              class="project-art basketball-art art"
+              role="img"
+              aria-label="Arte conceitual de uma quadra de basquete vista de cima"
+            ></div>
+            <p class="image-caption">Imagem conceitual</p>
+            <div class="project-title">
+              <h3>Basquete em construção</h3>
+              <span class="status-badge">Status a confirmar</span>
+            </div>
+            <p class="project-category">Projeto de aplicativo</p>
+            <p>Registro de atividades e estatísticas de basquete.</p>
+            <button class="text-button" data-project="basquete">
+              Conhecer a ideia <span aria-hidden="true">→</span>
+            </button>
+          </article>
+          <article class="project-card java-card">
+            <div
+              class="java-art"
+              aria-label="Representação conceitual do menu de um sistema de pedidos em Java"
+            >
+              <p class="eyebrow">Java / SQLite</p>
+              <pre aria-hidden="true">
+Sistema de pedidos
 ──────────────────
 Clientes · Produtos
 Pedidos  · Estoque
 Pagamentos simulados
 
-&gt; Java + SQLite</pre></div>
-          <div><p class="image-caption">Projeto acadêmico · Aplicação de console</p><h3>Sistema de pedidos em Java</h3><p class="project-category">Java · Orientação a objetos</p><p>Clientes, produtos, pedidos e persistência em SQLite.</p><button class="text-button" data-project="java">Conhecer o projeto <span aria-hidden="true">→</span></button></div>
-        </article>
-      </div>
-    </section>
-    <section id="sobre" class="about container" aria-labelledby="about-title">
-      <div class="section-heading"><span class="section-mark" aria-hidden="true"></span><h2 id="about-title">Sobre mim</h2></div>
-      <div class="about-intro">
-        <p>Sou Iago Diogo. Minha experiência vem de trabalhar com dados: organizar bases, construir dashboards e entender o que os números dizem sobre a operação. Gosto de investigar o problema, entender o processo e transformar essa leitura em algo útil para quem precisa decidir.</p>
-        <p>Hoje, estou ampliando esse caminho para o desenvolvimento. Estudo e pratico front-end e Java, construindo projetos que me ajudam a conectar dados, interfaces e regras de negócio. O basquete também faz parte dessa história — tanto na quadra quanto nas ideias que quero tirar do papel.</p>
-      </div>
-      <div class="player-card">
-        <div class="locker art" role="img" aria-label="Vestiário com uma camisa preta de basquete, nome Mãozinha e número 9, detalhes laranja e cabide de madeira">
+&gt; Java + SQLite</pre>
+            </div>
+            <div>
+              <p class="image-caption">
+                Projeto acadêmico · Aplicação de console
+              </p>
+              <h3>Sistema de pedidos em Java</h3>
+              <p class="project-category">Java · Orientação a objetos</p>
+              <p>Clientes, produtos, pedidos e persistência em SQLite.</p>
+              <button class="text-button" data-project="java">
+                Conhecer o projeto <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
         </div>
-        <div class="player-info">
-          <p class="eyebrow">Perfil de jogador <span class="ball-icon" aria-hidden="true"></span></p>
-          <h3>IAGO DIOGO</h3>
-          <dl>
-            <div><dt>Posição:</dt><dd>B.I. · Front-end · Dev em formação</dd></div>
-            <div><dt>Fundamentos:</dt><dd><ul><li>B.I.: tratamento de dados, medidas e dashboards</li><li>Front-end: páginas e layouts responsivos</li><li>Interações com JavaScript · em aprendizado</li><li>Java: orientação a objetos e regras de negócio</li><li>Persistência de dados com SQLite e JDBC</li></ul></dd></div>
-            <div><dt>Inventário:</dt><dd>Power BI · Power Query<br>HTML · CSS · JavaScript<br>Java · SQLite · JDBC</dd></div>
-          </dl>
-          <span class="cat-doodle" aria-hidden="true">ฅ^•ﻌ•^ฅ</span>
+      </section>
+      <section id="sobre" class="about container" aria-labelledby="about-title">
+        <div class="section-heading">
+          <span class="section-mark" aria-hidden="true"></span>
+          <h2 id="about-title">Sobre mim</h2>
         </div>
-      </div>
-    </section>
-    <section id="contato" class="contact container" aria-labelledby="contact-title">
-      <div class="contact-copy"><span class="section-mark" aria-hidden="true"></span><h2 id="contact-title">Vamos conversar?</h2><p>Me encontre por aqui.</p></div>
-      <div class="terminal" aria-label="Terminal de contato">
-        <div class="terminal-bar" aria-hidden="true"><i></i><i></i><i></i></div>
-        <div class="terminal-body">
-          <p><strong>iago</strong> / contato</p><p>Escolha um destino:</p>
-          <div class="terminal-links"><button data-social="linkedin">LinkedIn</button><button data-social="instagram">Instagram</button><button data-social="github">GitHub</button></div>
-          <p id="social-notice" class="terminal-status" aria-live="polite">Clique em uma rede ou digite seu nome abaixo.</p>
-          <form id="terminal-form"><label for="terminal-input">&gt; <span class="sr-only">Digite LinkedIn, Instagram, GitHub ou ajuda</span></label><input id="terminal-input" name="command" autocomplete="off" spellcheck="false" aria-label="Comando: LinkedIn, Instagram, GitHub ou ajuda" /></form>
+        <div class="about-intro">
+          <p>
+            Sou Iago Diogo. Minha experiência vem de trabalhar com dados:
+            organizar bases, construir dashboards e entender o que os números
+            dizem sobre a operação. Gosto de investigar o problema, entender o
+            processo e transformar essa leitura em algo útil para quem precisa
+            decidir.
+          </p>
+          <p>
+            Hoje, estou ampliando esse caminho para o desenvolvimento. Estudo e
+            pratico front-end e Java, construindo projetos que me ajudam a
+            conectar dados, interfaces e regras de negócio. O basquete também
+            faz parte dessa história — tanto na quadra quanto nas ideias que
+            quero tirar do papel.
+          </p>
         </div>
-      </div>
-      <aside class="margin-note contact-note">O próximo<br>passo também<br>faz parte<br>da história</aside>
-    </section>
-  </main>
-  <footer class="container"><a class="brand" href="#principal">Iago Diogo</a><span class="ball-icon" aria-hidden="true"></span></footer>
-  <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Fechar">×</button><p class="eyebrow">Em construção</p><h2 id="dialog-title"></h2><p id="dialog-description"></p><button class="primary-button dialog-done">Voltar ao portfólio</button></dialog>
-  <div class="toast" role="status" aria-live="polite"></div>
-  <script type="module" src="./src/main.js"></script>
-</body>
+        <div class="player-card">
+          <div
+            class="locker art"
+            role="img"
+            aria-label="Vestiário com uma camisa preta de basquete, nome Mãozinha e número 9, detalhes laranja e cabide de madeira"
+          ></div>
+          <div class="player-info">
+            <p class="eyebrow">
+              Perfil de jogador
+              <span class="ball-icon" aria-hidden="true"></span>
+            </p>
+            <h3>IAGO DIOGO</h3>
+            <dl>
+              <div>
+                <dt>Posição:</dt>
+                <dd>B.I. · Front-end · Dev em formação</dd>
+              </div>
+              <div>
+                <dt>Fundamentos:</dt>
+                <dd>
+                  <ul>
+                    <li>B.I.: tratamento de dados, medidas e dashboards</li>
+                    <li>Front-end: páginas e layouts responsivos</li>
+                    <li>Interações com JavaScript · em aprendizado</li>
+                    <li>Java: orientação a objetos e regras de negócio</li>
+                    <li>Persistência de dados com SQLite e JDBC</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Inventário:</dt>
+                <dd>
+                  Power BI · Power Query<br />HTML · CSS · JavaScript<br />Java
+                  · SQLite · JDBC
+                </dd>
+              </div>
+            </dl>
+            <span class="cat-doodle" aria-hidden="true">ฅ^•ﻌ•^ฅ</span>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contato"
+        class="contact container"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-copy">
+          <span class="section-mark" aria-hidden="true"></span>
+          <h2 id="contact-title">Vamos conversar?</h2>
+          <p>Me encontre por aqui.</p>
+        </div>
+        <div class="terminal" aria-label="Terminal de contato">
+          <div class="terminal-bar" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </div>
+          <div class="terminal-body">
+            <p><strong>iago</strong> / contato</p>
+            <p>Escolha um destino:</p>
+            <div class="terminal-links">
+              <button data-social="linkedin">LinkedIn</button
+              ><button data-social="instagram">Instagram</button
+              ><button data-social="github">GitHub</button>
+            </div>
+            <p id="social-notice" class="terminal-status" aria-live="polite">
+              Clique em uma rede ou digite seu nome abaixo.
+            </p>
+            <form id="terminal-form">
+              <label for="terminal-input"
+                >&gt;
+                <span class="sr-only"
+                  >Digite LinkedIn, Instagram, GitHub ou ajuda</span
+                ></label
+              ><input
+                id="terminal-input"
+                name="command"
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="Comando: LinkedIn, Instagram, GitHub ou ajuda"
+              />
+            </form>
+          </div>
+        </div>
+        <aside class="margin-note contact-note">
+          O próximo<br />passo também<br />faz parte<br />da história
+        </aside>
+      </section>
+    </main>
+    <footer class="container">
+      <a class="brand" href="#principal">Iago Diogo</a
+      ><span class="ball-icon" aria-hidden="true"></span>
+    </footer>
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" aria-label="Fechar">×</button>
+      <p class="eyebrow">Em construção</p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <button class="primary-button dialog-done">Voltar ao portfólio</button>
+    </dialog>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
-
